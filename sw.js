@@ -1,5 +1,5 @@
 // Field to Floor offline support. CACHE changes with every build, so phones pick up new content.
-const CACHE = "ftf-32559e6083";
+const CACHE = "ftf-75b27155d4";
 const SHELL = ["./", "index.html", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", e => {
